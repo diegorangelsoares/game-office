@@ -1,0 +1,327 @@
+.viewport {
+  width: 100%;
+  overflow: auto;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #0b1220;
+}
+
+.scaleFrame {
+  width: 860px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.pixelRoot {
+  position: relative;
+  width: 844px;
+  height: 768px;
+  display: grid;
+  grid-template-columns: 530px 294px;
+  grid-template-rows: 360px 380px;
+  gap: 14px;
+  background: #eadfd0;
+}
+
+.pixelRoot,
+.pixelRoot * {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  box-sizing: border-box;
+}
+
+.room {
+  position: relative;
+  overflow: hidden;
+}
+
+.productTeam {
+  background:
+    linear-gradient(45deg, #acb6c0 25%, transparent 25%) -10px 0/20px 20px,
+    linear-gradient(-45deg, #acb6c0 25%, transparent 25%) -10px 0/20px 20px,
+    linear-gradient(45deg, transparent 75%, #acb6c0 75%) -10px 0/20px 20px,
+    linear-gradient(-45deg, transparent 75%, #acb6c0 75%) -10px 0/20px 20px,
+    #b8c2cc;
+}
+
+.roomTitle {
+  position: absolute;
+  top: 6px;
+  left: 180px;
+  font-size: 36px;
+  color: rgba(120, 120, 120, 0.36);
+  margin: 0;
+}
+
+.longDeskTop,
+.longDeskBottom {
+  position: absolute;
+  left: 34px;
+  width: 462px;
+  height: 38px;
+  background: #f1f5f9;
+  border: 3px solid #93a4b5;
+}
+
+.longDeskTop {
+  top: 68px;
+}
+
+.longDeskBottom {
+  top: 230px;
+}
+
+.chair {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background: #1f2937;
+  border-radius: 6px;
+  border: 2px solid #111827;
+}
+
+.chair1 { top: 116px; left: 76px; }
+.chair2 { top: 116px; left: 204px; }
+.chair3 { top: 116px; left: 330px; }
+.chair4 { top: 274px; left: 78px; }
+.chair5 { top: 274px; left: 206px; }
+.chair6 { top: 274px; left: 334px; }
+
+.monitor {
+  position: absolute;
+  width: 34px;
+  height: 20px;
+  background: #374151;
+  border: 2px solid #111827;
+}
+
+.monitor1 { top: 74px; left: 58px; }
+.monitor2 { top: 74px; left: 138px; }
+.monitor3 { top: 74px; left: 217px; }
+.monitor4 { top: 74px; left: 297px; }
+.monitor5 { top: 74px; left: 376px; }
+.monitor6 { top: 236px; left: 218px; }
+
+.plant {
+  position: absolute;
+  width: 24px;
+  height: 32px;
+  background: linear-gradient(#22c55e 0 70%, #7c5a3a 70% 100%);
+  border-radius: 2px;
+}
+
+.plantTop { top: 62px; left: 352px; }
+.lampTop {
+  position: absolute;
+  top: 63px;
+  left: 410px;
+  width: 16px;
+  height: 24px;
+  background: linear-gradient(#facc15 0 50%, #9ca3af 50% 100%);
+}
+
+.badge {
+  position: absolute;
+  padding: 8px 12px;
+  border-radius: 16px;
+  background: #111827;
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.badgeBrad { top: 216px; left: 52px; }
+.badgeAlison { top: 216px; left: 300px; }
+.badgeYou {
+  top: 12px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.lounge {
+  background:
+    linear-gradient(45deg, #d4dae5 25%, transparent 25%) 0 0/38px 38px,
+    linear-gradient(-45deg, #d4dae5 25%, transparent 25%) 0 0/38px 38px,
+    linear-gradient(45deg, transparent 75%, #d4dae5 75%) 0 0/38px 38px,
+    linear-gradient(-45deg, transparent 75%, #d4dae5 75%) 0 0/38px 38px,
+    #e8edf5;
+}
+
+.sofaTop,
+.sofaBottom {
+  position: absolute;
+  height: 30px;
+  background: #d9b39d;
+  border: 3px solid #bc8f79;
+}
+
+.sofaTop { top: 64px; left: 98px; width: 128px; }
+.sofaBottom { top: 234px; left: 108px; width: 148px; }
+
+.roundTable {
+  position: absolute;
+  top: 128px;
+  left: 118px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #d5ae84;
+  border: 3px solid #b88f64;
+}
+
+.shelfLeft,
+.shelfRight {
+  position: absolute;
+  top: 36px;
+  width: 70px;
+  height: 84px;
+  background: #94a3b8;
+  border: 3px solid #6b7280;
+}
+
+.shelfLeft { left: 22px; }
+.shelfRight { right: 16px; }
+
+.puff {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.puffA { top: 148px; left: 26px; background: #60a5fa; }
+.puffB { top: 190px; left: 24px; background: #f472b6; }
+.puffC { top: 188px; right: 20px; background: #a78bfa; }
+.puffD { top: 150px; right: 16px; background: #60a5fa; }
+
+.plantLoungeA { top: 74px; left: 32px; }
+.plantLoungeB { top: 76px; right: 30px; }
+
+.gameRoom {
+  background:
+    repeating-linear-gradient(90deg, #8688c9 0 22px, #7f81c0 22px 44px);
+}
+
+.pingPong {
+  position: absolute;
+  top: 92px;
+  left: 26px;
+  width: 122px;
+  height: 74px;
+  background: #54b27f;
+  border: 4px solid #3c9a68;
+}
+
+.centerTable {
+  position: absolute;
+  top: 82px;
+  left: 182px;
+  width: 126px;
+  height: 60px;
+  background: #c89e72;
+  border: 3px solid #a67a4d;
+}
+
+.sofaLeft,
+.sofaBottom {
+  position: absolute;
+  background: #d2a282;
+  border: 3px solid #b37d5d;
+}
+
+.sofaLeft { top: 112px; left: 158px; width: 24px; height: 66px; }
+.sofaBottom { top: 260px; left: 240px; width: 98px; height: 28px; }
+
+.chairOrange {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: #fb923c;
+  border: 3px solid #ea580c;
+}
+
+.oc1 { top: 84px; left: 150px; }
+.oc2 { top: 146px; left: 152px; }
+.oc3 { top: 244px; left: 210px; }
+
+.plantGameA { top: 42px; left: 30px; }
+.plantGameB { top: 218px; left: 168px; }
+.plantGameC { top: 232px; left: 350px; }
+
+.cxTeam {
+  background: #bac5cf;
+}
+
+.roomTitleCx {
+  position: absolute;
+  top: 14px;
+  left: 94px;
+  font-size: 38px;
+  color: rgba(120, 120, 120, 0.36);
+  margin: 0;
+}
+
+.cxDeskTop,
+.cxDeskBottom {
+  position: absolute;
+  left: 16px;
+  width: 262px;
+  height: 40px;
+  background: #f8fafc;
+  border: 3px solid #94a3b8;
+}
+
+.cxDeskTop { top: 104px; }
+.cxDeskBottom { top: 232px; }
+
+.cxChair1 { top: 152px; left: 34px; }
+.cxChair2 { top: 152px; left: 170px; }
+.cxChair3 { top: 280px; left: 34px; }
+.cxChair4 { top: 280px; left: 170px; }
+.cxMonitor1 { top: 112px; left: 40px; }
+.cxMonitor2 { top: 112px; left: 178px; }
+.cxMonitor3 { top: 240px; left: 44px; }
+.cxMonitor4 { top: 240px; left: 180px; }
+
+.badgeCx {
+  position: absolute;
+  top: 40px;
+  left: 26px;
+  padding: 8px 12px;
+  border-radius: 16px;
+  background: #111827;
+  color: #fff;
+  font-size: 28px;
+}
+
+.projectHotspot {
+  position: absolute;
+  border: 2px dashed #22d3ee;
+  background: rgba(34, 211, 238, 0.16);
+  color: #0f172a;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.hotspotA { top: 66px; left: 48px; width: 108px; height: 42px; }
+.hotspotB { top: 66px; left: 174px; width: 108px; height: 42px; }
+.hotspotC { top: 236px; left: 96px; width: 108px; height: 42px; }
+
+.playerTag {
+  position: absolute;
+  top: 126px;
+  left: 14px;
+  width: 18px;
+  height: 28px;
+  background: #2563eb;
+  border: 2px solid #0f172a;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "game-office",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @game-office/web",
+    "dev:api": "npm run dev -w @game-office/api",
+    "dev:realtime": "npm run dev -w @game-office/realtime",
+    "compose:up": "docker compose -f infra/compose/docker-compose.yml up --build",
+    "compose:down": "docker compose -f infra/compose/docker-compose.yml down",
+    "build": "npm run build -ws",
+    "start": "npm run start -w @game-office/web",
+    "lint": "npm run lint -ws"
+  }
+}
